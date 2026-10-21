@@ -10,6 +10,7 @@ This repository showcases part of my PMGT5850 Project Management Capstone Projec
 本仓库展示的是我在悉尼大学 PMGT5850 项目管理 Capstone Project 中的一部分项目成果。项目主要围绕生成式 AI 图像工具评估展开，并尝试建立一套可重复使用的工作流，让非技术用户也能够稳定生成风格一致的线稿插图。
 
 ---
+
 ## Project Context | 项目背景
 
 **EN**  
@@ -23,6 +24,7 @@ The challenge was not simply to generate individual images, but to determine whi
 项目的难点并不只是生成单张图片，而是要判断哪个平台能够同时满足风格一致性、成本可控、授权条件适用，并且在项目交付后，非技术用户仍能够继续使用这套流程。
 
 ---
+
 ## My Role | 我的角色
 
 **EN**  
@@ -130,3 +132,57 @@ This repository is intended as a portfolio showcase of my contribution to the pr
 
 **中文**  
 本仓库主要用于作品集展示，重点呈现我在该项目中的个人贡献。涉及 Sponsor 的保密资料、团队内部文件、API 凭证以及与课程考核相关的敏感文件不会上传至本仓库。
+
+---
+
+## Repository Structure | 仓库结构
+
+```text
+generative-ai-image-workflow/
+├── app.py
+├── line_art.py
+├── requirements.txt
+├── DEPLOY.md
+├── .env.example
+├── .gitignore
+├── tests/
+│   └── test_app.py
+└── assets/
+    ├── prototype-interface.jpg
+    ├── before-after-01.jpeg
+    └── before-after-02.png
+```
+
+**EN**  
+The repository contains the Streamlit application, image-processing logic, deployment notes, automated tests, and portfolio screenshots.
+
+**中文**  
+本仓库包含 Streamlit 网页应用、图像处理逻辑、部署说明、自动化测试以及用于作品集展示的项目截图。
+
+---
+
+## How to Run Locally | 本地运行
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+python -m streamlit run app.py
+```
+
+**EN**  
+Before running the application, add your own OpenAI API key to the `.env` file.
+
+**中文**  
+启动应用前，请在 `.env` 文件中填写你自己的 OpenAI API Key。
+
+---
+
+## Notes | 说明
+
+**EN**  
+The live web prototype is not publicly shared because image generation uses a paid API account. The source code is provided here for portfolio and demonstration purposes.
+
+**中文**  
+由于网页原型调用的是付费图像生成 API，因此暂不公开在线访问链接。本仓库主要用于作品集展示和项目说明。
